@@ -1,0 +1,1151 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.9s;
+}
+
+
+body {
+
+  background-color:#dadde1;
+ 
+}
+
+
+
+.header {
+  display: flex;
+  background-color: rgb(186, 203, 196);
+  box-sizing: border-box;
+
+}
+
+.header-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 50%;
+
+}
+
+
+
+#header-registros {
+  padding-top: 5px;
+  text-decoration: none;
+  color: rgb(15, 22, 28);
+  border: solid white 1px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#header-buscar {
+  padding-top: 5px;
+  text-decoration: none;
+  color: rgb(34, 41, 47);
+  font-size: medium;
+  border: solid white 1px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.btn-header:hover {
+  background-color: rgb(58, 209, 58);
+}
+
+.padre-menu-desktop{   /*MENU BARRA LATERAL*/
+  display: none;
+}
+
+/*------------------------------------------------------------------------- ----------------------------------------------------------------/*
+
+
+/*   INICIO DE ESTILOS ARCHIVO LOGIN  */
+#main-login{
+  border: solid 2px;
+  display: flex;
+  width: 100%;
+  min-height: 1080px;
+  background-color:#dadde1;
+  
+}
+
+.form-login {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 80%;
+  min-height: 400px;
+  margin: auto;
+  margin-top: 10%;
+  padding-left: 5%;
+  font-size: 15px;
+}
+
+
+#usuario {
+  margin-top: 15%;
+  padding: 6%;
+  width: 82%;
+  background-color: rgb(198, 235, 222);
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+
+}
+
+#usuario:focus {
+  color: black;
+  border: solid 1px rgb(22, 22, 226);
+  outline: rgb(22, 22, 226);
+  background-color: rgb(136, 138, 253);
+  border-radius: 5px;
+}
+
+#clave {
+  margin-top: 4%;
+  padding: 6%;
+  width: 82%;
+  background-color: rgb(198, 235, 222);
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+
+}
+
+#clave:focus {
+  color: black;
+  border: solid 1px rgb(22, 22, 226);
+  outline: rgb(22, 22, 226);
+  background-color: rgb(136, 138, 253);
+  border-radius: 5px;
+}
+
+.login-input::placeholder {
+  color: black;
+}
+
+#ingresar {
+  display: flex;
+  width: 85%;
+  padding: 3%;
+  margin-left: 5%;
+  margin-top: 5%;
+  justify-content: center;
+  font-size: 2vh;
+  box-shadow: 1px 2px 5px 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(71, 160, 238);
+}
+
+.leyenda {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 8%;
+  justify-content: center;
+  font-size: 2vh;
+}
+
+.login:focus {
+  color: black;
+  border: solid 1px rgb(22, 22, 226);
+  outline: rgb(22, 22, 226);
+  background-color: rgb(157, 209, 183);
+  border-radius: 5px;
+}
+
+.login::placeholder {
+  color: black;
+  font-size: 2vh;
+}
+
+.icon-usuario {
+  position: relative;
+  bottom: 36%;
+  left: 80%;
+  width: 7%;
+}
+
+.icon-clave {
+  position: relative;
+  bottom: 40%;
+  left: 80%;
+  width: 8%;
+}
+
+/*   FIN DE ESTILOS ARCHIVO LOGIN  ------------------------------------------------------------------------------------------------------*/
+
+/* INICIO ESTILO ALERTAS */
+#div-nostart{
+  font-size: 12px;
+  display: flex;
+  background-color: red;
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#div-vacio{
+  font-size: 12px;
+  display: flex;
+  background-color: red;
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#btn-nostart{
+  margin-left: 10px;
+}
+#btn-nostart:hover{
+  cursor: pointer;
+}
+
+#div-guardado{
+  font-size: 12px;
+  display: flex;
+  background-color: rgb(61, 221, 83);
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#div-no-guardado{
+  font-size: 12px;
+  display: flex;
+  background-color: rgb(212, 64, 64);
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+/* FIN ESTILO ALERTAS */
+
+
+
+/* INICIO ESTILOS MENU LATERAL */
+
+#main{
+  display: flex;
+  width: 100%;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  }
+
+  .padre-hamburguesa{
+    position: absolute;
+    width: 100%;
+    min-height: 40px;
+    background-color: #b2b6b9 ;
+    
+  }
+  .hamburguesa{
+    width: 7%;
+    min-height: 30px;
+    padding-left: 1%;
+    padding-top: 1%;
+  }
+  .hamburguesa:hover{
+    cursor: pointer;
+    background-color: rgb(113, 224, 90);
+  }
+
+.menu-padre{
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+.menu-child{
+  display: none;
+  flex-direction: column;
+  width: 80%;
+  min-height: 1500px;
+  padding-top: 2%;
+  padding-left: 2%;
+  background-color: #000000;
+}
+
+.btn-menu{
+  text-decoration: none;
+  font-size: 20px;
+  width: 90%;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 1px;
+  background-color: rgb(29, 48, 42);
+  color: white;
+}
+.btn-menu:hover{
+  background-color: rgb(37, 37, 238);
+}
+
+
+/* FIN ESTILOS MENU LATERAL --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* INICIO ESTILOS CREAR.PHP */
+
+#main-crear{
+  display: flex;
+  width: 100%;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  }
+
+#formulario{
+  display: flex;
+  width: 100%;
+  min-height: 1080px;
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 8%;
+  box-sizing: border-box;
+  
+}
+
+.div-sesion{
+  display: none;
+}
+
+#crear-registros {
+  display: flex;
+  margin: auto;
+  margin-top: 2%;
+  padding: 3%;
+  padding-right: 2%;
+  padding-bottom: 4%;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 99%;
+  min-height: 720px;
+ }
+
+.input-registros {
+  background-color: rgb(198, 235, 222);
+  display: flex;
+  width: 85%;
+  padding: 5%;
+  margin: 2%;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-registros:focus {
+  color: black;
+  border: solid 1px rgb(22, 22, 226);
+  outline: rgb(22, 22, 226);
+  background-color: rgb(161, 209, 192);
+  border-radius: 5px;
+}
+
+.input-registros::placeholder {
+  color: black;
+  font-size: 2vh;
+}
+
+#guardar {
+  width: 80%;
+  padding: 5%;
+  margin: auto;
+  background-color: rgb(206, 218, 123);
+}
+
+#cerrar {
+  width: 80%;
+  padding: 5%;
+  margin: auto;
+  background-color: rgb(206, 218, 123);
+}
+
+/* FIN ESTILOS CREAR.PHP --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* INICIO ESTILOS BUSCAR.PHP */
+
+#main-buscar{
+  display: flex;
+  width: 100%;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  }
+
+#form-buscar {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #cdced1;
+  margin: auto;
+  margin-top: 10%;
+  width: 95%;
+  padding: 2%;
+  padding-top: 5%;
+  min-height: 720px;
+
+}
+
+#enlace-buscar{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 18px;
+  padding: 3%;
+  border: none;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+#title-buscar {
+  padding: 3%;
+  background-color: rgb(217, 235, 217);
+  text-align: center;
+  height: 2em;
+  margin: 1%;
+}
+
+#input-buscar-cedula {
+  background-color: rgb(236, 245, 236);
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 20px;
+  padding: 5%;
+  border-radius: 10px;
+  border: none;
+}
+
+#btn-buscar-cedula::placeholder {
+  color: black;
+}
+
+#input-buscar-cedula:focus {
+  color: black;
+  border: solid 1px rgb(22, 22, 226);
+  outline: rgb(22, 22, 226);
+  border-radius: 5px;
+}
+
+
+#btn-buscar-cedula {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 20px;
+  padding: 3%;
+  border: none;
+  justify-content: center;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#btn-buscar-cedula:hover {
+  background-color: rgb(158, 158, 243);
+}
+/* FIN ESTILOS BUSCAR.PHP ---------------------------------------------------------------------------------------------------------------------------*/
+
+/* INICIO ENCONTRADO.PHP */
+
+#main-encontrado{
+  overflow-x: auto;
+  width: 100%;
+  max-width: 60rem;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  
+}
+
+#table-encontrado{
+  margin-top: 8%;
+  background-color: rgb(203, 249, 177);
+  width: 100%;
+  justify-content: left;
+  border-collapse: collapse;
+  table-layout:auto;
+  font-size: 12px;
+}
+/* FIN ENCONTRADO.PHP */
+
+
+/* INICIO ESTILOS REGISTROS.PHP */
+
+#main-registros{
+  overflow-x: auto;
+  width: 100%;
+  max-width: 60rem;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  }
+
+table {
+   margin-top: 8%;
+  background-color: rgb(203, 249, 177);
+  width: 100%;
+  justify-content: left;
+  border-collapse: collapse;
+  table-layout:auto;
+  font-size: 10px;
+}
+
+thead {
+   background-color: aquamarine;
+   
+}
+
+th {
+  
+  padding: 15px;
+  font-size: 20px;
+}
+
+td {
+  border: solid 0.5px rgb(81, 224, 81);
+  padding: 10px;
+}
+
+/* FIN ESTILOS REGISTROS.PHP --------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* INICIO ESTILOS VISTA EDITAR CLIENTES */
+
+#main-editar-clientes{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1080px;
+  background-color: #bec1c4;
+}
+
+.div-editar-clientes{
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 8%;
+    min-height: 1080px;
+  }
+  
+  .titulo-editar{
+    display: flex;
+    margin-top: 2%;
+  }
+
+#form-editar-clientes{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  margin-top: 8%;
+  min-height: auto;
+  
+}
+
+.input-editar-usuarios{
+  display: flex;
+  margin: auto;
+  margin-top: 5%;
+  width: 80%;
+  padding: 4%;
+  background-color: rgb(198, 235, 222);
+  border: none;
+  border-radius: 10px;
+}
+.guardar-editar-usuarios{
+  display: flex;
+  width: 50%;
+  height: 30px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(158, 158, 243);
+}
+
+.guardar-editar-usuarios:hover{
+  cursor: pointer;
+  background-color: blue;
+}
+/* FIN ESTILOS VISTA EDITAR CLIENTES -----------------------------------------------------------------------------------------------------------------*/
+
+/* INICIO ADMINISTRAR */
+
+#main-administrar{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  
+}
+
+#form-administrar{
+  display: flex;
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  flex-direction: column;
+  width: 90%;
+  min-height: auto;
+  
+}
+
+.crear-asesores{
+  display: flex;
+  width: 90%;
+  height: 30px;
+  padding: 3%;
+  margin: 2%;
+  margin-top: 4%;
+  border: none;
+  background-color: rgb(198, 235, 222);
+  color: black;
+  border-radius: 5px;
+}
+
+.crear-asesores:focus {
+  color: black;
+  border: solid 1px rgb(22, 22, 226);
+  outline: rgb(22, 22, 226);
+  background-color: rgb(161, 209, 192);
+  border-radius: 5px;
+}
+
+.btn-crear-asesores{
+  display: flex;
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+ justify-content: center;
+ align-items: center;
+}
+
+/* FIN  ADMINISTRAR ------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* INICIO USUARIOS */
+
+#main-asesores{
+  overflow-x: auto;
+  width: 100%;
+  max-width: 60rem;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  }
+
+.table-usuarios {
+  margin-top: 8%;
+  background-color: rgb(203, 249, 177);
+  width: 100%;
+  justify-content: left;
+  border-collapse: collapse;
+  table-layout:auto;
+  font-size: 12px;
+}
+
+
+/* FIN  USUARIOS -----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* INICIO EDITAR  USUARIOS */
+
+#main-editar-asesores{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1080px;
+  background-color:#dadde1;
+  
+}
+
+.form-editar-asesores{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  min-height: auto;
+  padding: 1%;
+  padding-bottom: 5%;
+  margin-top: 4%;
+  border: none;
+  background-color: #d5d7da;
+  color: black;
+  border-radius: 5px;
+}
+
+.input-editar-asesores{
+  display: flex;
+  width: 90%;
+  height: 40px;
+  margin: 2%;
+  padding: 3%;
+  background-color: rgb(198, 235, 222);
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-editar-asesores{
+  display: flex;
+  width: 80%;
+  background-color: rgb(132, 132, 240);
+  border: none;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3%;
+  padding: 3%;
+  
+}
+
+/* FIN EDITAR  USUARIOS --------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* VERSION ESCRITORIO ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+
+@media(min-width:1024px){
+  body{
+    background: url(../public/back-ground.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+  }
+
+/* INICIO MENU ----------------------------------------------*/
+
+.padre-hamburguesa{   /*OCULTANDO LA HAMBURGUESA*/
+  display: none;
+}
+
+.padre-menu-desktop{
+   display: flex;
+   width: 7%;
+   background-color: #5c5757;
+   min-height: 1080px;
+   padding:3px;
+   padding-right: 8px;
+}
+
+.menu-hijo-desktop{
+  width: 90%;
+  padding: 5%;
+}
+
+.btn-menu-desktop{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 50px;
+  text-decoration: none;
+  color: white;
+  background-color: #788ca0;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 3px;
+  }
+.btn-menu-desktop:hover{
+  background-color: #abb1b6;
+}
+.btn-menu-desktop a {
+  text-decoration: none;
+  color: white;
+}
+
+/* FIN MENU ----------------------------------------------*/
+
+
+/* INICIO LOGIN.PHP----------------------------------------------------*/
+
+#main-login{
+  width: 30%;
+  border:solid 1px #b2b6b9;
+  opacity: 0.9;
+}
+
+.form-login{
+  box-shadow: none;
+  border:solid #b2b6b9;
+  min-height: auto;
+  padding: 2%;
+  padding-left: 5%;
+}
+#ingresar{
+  background-color: #abb1b6;
+}
+#ingresar:hover{
+  cursor: pointer;
+  background-color:#545658;
+}
+.leyenda{
+  margin-bottom: 10%;
+}
+
+/* FIN LOGIN.PHP----------------------------------------------------*/
+
+
+/* INICIO ESTILO ALERTAS */
+#div-nostart{
+  font-size: 12px;
+  display: flex;
+  background-color: red;
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#div-vacio{
+  font-size: 12px;
+  display: flex;
+  background-color: red;
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#btn-nostart{
+  margin-left: 10px;
+}
+#btn-nostart:hover{
+  cursor: pointer;
+}
+
+#div-guardado{
+  font-size: 12px;
+  display: flex;
+  background-color: rgb(61, 221, 83);
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#div-no-guardado{
+  font-size: 12px;
+  display: flex;
+  background-color: rgb(212, 64, 64);
+  min-height: 30px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+/* FIN ESTILO ALERTAS */
+
+
+/* INICIO EDITAR  USUARIOS */
+
+#main-editar-asesores{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1080px;
+  background-color:#dadde1;
+  
+}
+
+.form-editar-asesores{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  min-height: auto;
+  padding: 1%;
+  padding-bottom: 5%;
+  margin-top: 1%;
+  border: none;
+  background-color: #d5d7da;
+  color: black;
+  border-radius: 5px;
+}
+
+.input-editar-asesores{
+  display: flex;
+  width: 90%;
+  height: 40px;
+  margin: 2%;
+  padding: 3%;
+  background-color: rgb(198, 235, 222);
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-editar-asesores{
+  display: flex;
+  width: 80%;
+  background-color: rgb(132, 132, 240);
+  border: none;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3%;
+  padding: 3%;
+  
+}
+
+/* FIN EDITAR  USUARIOS ---------------
+
+
+
+/* INICIO CREAR.PHP----------------------------------------------------*/
+
+#main-crear{
+  width: 100%;
+  min-height: auto;
+  background-color: none;
+  margin: auto;
+
+}
+
+.div-sesion{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  font-size: small;
+  margin-left: 0.2%;
+}
+
+
+.input-registros{
+  width: 80%;
+  padding: 2%;
+ }
+#formulario{
+  margin-top: 0;
+  flex-direction: row;
+  min-height: auto;
+  box-shadow: none;
+}
+#crear-registros{
+  width: 50%;
+  margin-top: 0%;
+  min-height: auto;
+  background-color: none;
+  box-shadow: none;
+  
+}
+
+#guardar{
+  width: 30%;
+  padding: 2%;
+  margin-top: 2%;
+  background-color: #abb1b6;
+  border: none;
+  border-radius: 10px;
+}
+#guardar:hover{
+  cursor: pointer;
+  background-color:#545658;
+}
+/* FIN CREAR.PHP----------------------------------------------------*/
+
+
+
+/* INICIO BUSCAR.PHP----------------------------------------------------*/
+
+#form-buscar{
+  width: 30%;
+  margin-top:1%;
+  margin-left: 25%;
+}
+
+/* FIN BUSCAR.PHP----------------------------------------------------*/
+
+/* INICIO ENCONTRADO.PHP */
+
+#main-encontrado{
+  display: flex;
+  overflow-x: none;
+  width: 100%;
+  min-width: 100%;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  
+}
+
+#table-encontrado{
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 10%;
+  margin-top: 0%;
+  background-color: rgb(234, 238, 232);
+  width: 86%;
+  border-collapse: none;
+  table-layout:auto;
+  font-size: 12px;
+}
+/* FIN ENCONTRADO.PHP */
+
+/* INICIO ADMINISTRAR BUSCAR.PHP----------------------------------------------------*/
+
+#main-administrar{
+  flex-direction: row;
+}
+
+#form-administrar{
+  width: 20%;
+}
+
+/* FIN ADMINISTRAR.PHP----------------------------------------------------*/
+
+
+
+/* INICIO USUARIOS.PHP----------------------------------------------------*/
+
+#main-asesores{
+  display: flex;
+  overflow-x: none;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1080px;
+  background-color: #d5d7da;
+  }
+
+.table-usuarios {
+  margin-top: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 10%;
+  background-color: rgb(203, 249, 177);
+  width: 100%;
+  border-collapse: none;
+  table-layout:none;
+  font-size: 12px;
+}
+
+
+/* FIN USUARIOS.PHP----------------------------------------------------*/
+
+/* INICIO REGISTROS.PHP----------------------------------------------------*/
+
+#main-registros{
+  display: flex;
+  overflow-x: none;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1080px;
+  background-color: #d5d7da;
+}
+
+#main-registros table {
+  margin-top: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 10%;
+  background-color: rgb(203, 249, 177);
+  width: 100%;
+  border-collapse: none;
+  table-layout:none;
+  font-size: 12px;
+}
+
+
+/* FIN REGISTROS.PHP----------------------------------------------------*/
+
+/* INICIO ESTILOS VISTA EDITAR CLIENTES */
+
+#main-editar-clientes{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 1080px;
+  background-color: #bec1c4;
+}
+
+.div-editar-clientes{
+    display: flex;
+    width: 30%;
+    
+    margin-top: 0;
+    min-height: 1080px;
+  }
+  
+  .titulo-editar{
+    display: flex;
+    margin-top: 2%;
+  }
+
+#form-editar-clientes{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 8%;
+  min-height: auto;
+  
+}
+
+.input-editar-usuarios{
+  display: flex;
+  margin: auto;
+  margin-top: 5%;
+  width: 80%;
+  padding: 4%;
+  background-color: rgb(198, 235, 222);
+  border: none;
+  border-radius: 10px;
+}
+.guardar-editar-usuarios{
+  display: flex;
+  width: 50%;
+  height: 30px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(158, 158, 243);
+}
+
+.guardar-editar-usuarios:hover{
+  cursor: pointer;
+  background-color: blue;
+}
+
+/* FIN ESTILOS VISTA EDITAR CLIENTES */
+
+
+}

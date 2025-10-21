@@ -1,0 +1,29 @@
+
+  <!-- alertas -->
+      <?php if (isset($_SESSION['saved'])) { ?>
+        <!-- <script>
+          Swal.fire({
+            title: "Guardado Correctamente",
+            text: "se creo el registro con exito en base de datos",
+            icon: "success"
+          })
+        </script> -->
+      <?php unset($_SESSION['saved']);
+        $alert = new Alertas();
+        $alert->Guardado();
+      } ?>
+
+      <?php if (isset($_SESSION['Nosaved'])) {  $alert = new Alertas();
+        $alert->NoGuardado(); ?>
+        <!-- <script>
+          Swal.fire({
+            title: "Error al Guardar",
+            text: "Verifique todos los campos obligatorios",
+            icon: "error"
+          });
+        </script> -->
+      <?php
+       
+        unset($_SESSION['Nosaved']);
+      } ?>
+      <!-- alertas -->
