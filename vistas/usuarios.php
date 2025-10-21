@@ -58,7 +58,7 @@ if ($_SESSION['rol'] !== 'administrador'){
             require('../config/DataBase.php');
             $conn = new DataBase();
             $pdo = $conn->conexion();
-            $query = $pdo->prepare("SELECT * FROM usuarios");
+            $query = $pdo->prepare("SELECT * FROM usuarios_jc");
             $query->execute();
             $arr = $query->fetchAll();
             ?>

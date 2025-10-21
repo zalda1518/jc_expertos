@@ -15,7 +15,7 @@
         $conn = new DataBase();
         $pdo = $conn->conexion();
     
-        $query = $pdo->prepare("UPDATE asesores SET usuario=:User, clave=:Clave, rol=:Rol  WHERE id_asesor=:ID ");
+        $query = $pdo->prepare("UPDATE usuarios_jc SET usuario=:User, clave=:Clave, rol=:Rol  WHERE id_asesor=:ID ");
         $query->bindParam(':Id_asesor', $id);
         $query->bindParam(':User', $usuario);
         $query->bindParam(':Clave', $clave);

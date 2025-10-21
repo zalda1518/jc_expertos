@@ -19,7 +19,7 @@ class LoginModelo
         $conn = new DataBase();
         $pdo = $conn->conexion();
 
-        $query = $pdo->prepare("SELECT *  FROM usuarios WHERE usuario = :user AND clave = :pass ");
+        $query = $pdo->prepare("SELECT *  FROM usuarios_jc WHERE usuario = :user AND clave = :pass ");
         $query->bindParam(':user', $usuario, PDO::PARAM_STR);
         $query->bindParam(':pass', $clave, PDO::PARAM_STR);
         $query->execute();

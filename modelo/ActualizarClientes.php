@@ -22,7 +22,7 @@
     $conn = new DataBase();
     $pdo = $conn->conexion();
 
-    $query = $pdo->prepare("UPDATE ventas SET  mes=:Mes, nombres=:Nombres, cedula=:Cedula, direccion=:Direccion, servicio=:Servicio, telefono=:Telefono, pedido=:Pedido, fecha_creacion=:Creacion WHERE id=:ID AND creado_by=:Creado_by");
+    $query = $pdo->prepare("UPDATE ventas_jc SET  mes=:Mes, nombres=:Nombres, cedula=:Cedula, direccion=:Direccion, servicio=:Servicio, telefono=:Telefono, pedido=:Pedido, fecha_creacion=:Creacion WHERE id=:ID AND creado_by=:Creado_by");
     $query->bindParam(':Mes', $mes);
     $query->bindParam(':Nombres', $nombres);
     $query->bindParam(':Cedula', $cedula);

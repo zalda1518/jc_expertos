@@ -54,7 +54,7 @@ if (isset($_SESSION['borrado'])) {
      
       $conn = new DataBase();
       $pdo = $conn->conexion();
-      $query = $pdo->prepare("SELECT * FROM ventas WHERE creado_by = $id_asesor ORDER BY mes ASC");
+      $query = $pdo->prepare("SELECT * FROM ventas_jc WHERE creado_by = $id_asesor ORDER BY mes ASC");
       $query->execute();
       $arr = $query->fetchAll();
      

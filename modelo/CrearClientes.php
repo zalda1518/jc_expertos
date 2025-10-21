@@ -22,7 +22,7 @@ class CrearClientes {
         $pdo = $conn->conexion();
   
 
-      $query = $pdo->prepare("INSERT INTO ventas (mes,nombres,cedula,direccion,telefono,pedido,creado_by,servicio,fecha_creacion) VALUES (:mes,:nombres,:cedula,:direccion,:telefono,:pedido,:creado_by,:servicio,:fecha_creacion)");
+      $query = $pdo->prepare("INSERT INTO ventas_jc (mes,nombres,cedula,direccion,telefono,pedido,creado_by,servicio,fecha_creacion) VALUES (:mes,:nombres,:cedula,:direccion,:telefono,:pedido,:creado_by,:servicio,:fecha_creacion)");
       $query->bindParam(':mes', $MES, PDO::PARAM_STR_CHAR);
       $query->bindParam(':nombres', $NOMBRES,PDO::PARAM_STR_CHAR);
       $query->bindParam(':cedula', $CEDULA,PDO::PARAM_INT);

@@ -16,7 +16,7 @@
         $pdo = $conn->conexion();
   
   
-        $query = $pdo->prepare("INSERT INTO usuarios (usuario, clave, rol) VALUES (:User, :Pass, :Rol)");
+        $query = $pdo->prepare("INSERT INTO usuarios_jc (usuario, clave, rol) VALUES (:User, :Pass, :Rol)");
         $query->bindParam(':User', $user, PDO::PARAM_STR_CHAR);
         $query->bindParam(':Pass', $clave, PDO::PARAM_STR_CHAR);
         $query->bindParam(':Rol', $rol, PDO::PARAM_STR_CHAR);
