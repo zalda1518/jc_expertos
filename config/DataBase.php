@@ -1,19 +1,24 @@
 <?php
 class DataBase
 {
-  private $host = 'centerbeam.proxy.rlwy.net';
+  private $host = 'containers-us-west-45.railway.app'; // ⚠️ cambia por el tuyo exacto
   private $usuario = 'root';
-  private $clave = 'aeSQNfzAEzQZaskIJNRJvkWzlOwrbmpJ';
+  private $clave = 'AE8p9RkWfV7vZwzYjNqN'; // ⚠️ tu contraseña
   private $basedatos = 'railway';
-  private $port = 3306;
+  private $port = 52524; // ⚠️ este puerto debe coincidir
 
   public function conexion()
   {
     try {
-      $pdo = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->basedatos, $this->usuario, $this->clave);
+      $pdo = new PDO(
+        "mysql:host=$this->host;dbname=$this->basedatos;port=$this->port;charset=utf8mb4",
+        $this->usuario,
+        $this->clave
+      );
+      $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       return $pdo;
     } catch (PDOException $error) {
-      echo $error->getMessage();
+      die("❌ Error de conexión: " . $error->getMessage());
     }
   }
 }
