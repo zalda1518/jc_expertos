@@ -1,14 +1,13 @@
-
 FROM php:8.2-apache
 
-# Copia archivos al contenedor
+# Instalar extensiones necesarias para MySQL
+RUN docker-php-ext-install pdo pdo_mysql mysqli
+
+# Copiar tu código fuente
 COPY . /var/www/html/
 
-# Habilita módulos necesarios
-RUN docker-php-ext-install mysqli pdo pdo_mysql && \
-    docker-php-ext-enable pdo_mysql
+# Cambiar el puerto (Railway usa el 8080)
+RUN sed -i 's/80/8080/' /etc/apache2/ports.conf /etc/apache2/sites-available/000-default.conf
 
-# Configura permisos
-RUN chown -R www-data:www-data /var/www/html/
-
-EXPOSE 80
+EXPOSE 8080
+CMD ["apache2-foreground"]

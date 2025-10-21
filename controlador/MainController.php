@@ -38,7 +38,7 @@ class MainController
     $con = new DataBase();
     $pdo = $con->conexion();
 
-    $query = $pdo->prepare("SELECT * FROM ventas WHERE id = :ID");
+    $query = $pdo->prepare("SELECT * FROM ventas_jc WHERE id = :ID");
     $query->execute(['ID' => $id]);
     $resul = $query->fetch();
 
@@ -70,7 +70,7 @@ class MainController
     $conn = new DataBase();
     $pdo = $conn->conexion();
 
-    $query = $pdo->prepare("DELETE FROM ventas WHERE  id=:ID  AND creado_by=:CRE");
+    $query = $pdo->prepare("DELETE FROM ventas_jc WHERE  id=:ID  AND creado_by=:CRE");
     $query->bindParam(':ID', $id, PDO::PARAM_INT);
     $query->bindParam(':CRE', $Creado_by, PDO::PARAM_INT);
     $query->execute();
@@ -92,7 +92,7 @@ class MainController
     $con = new DataBase();
     $pdo = $con->conexion();
  
-    $query = $pdo->prepare("SELECT * FROM ventas WHERE cedula = :ced AND creado_by = :cre ");
+    $query = $pdo->prepare("SELECT * FROM ventas_jc WHERE cedula = :ced AND creado_by = :cre ");
     $query->bindParam(':ced', $cedula, PDO::PARAM_INT);
     $query->bindParam(':cre', $Creado_by, PDO::PARAM_INT);
     $query->execute();
@@ -111,7 +111,7 @@ class MainController
     $con = new DataBase();
     $pdo = $con->conexion();
  
-    $query = $pdo->prepare("SELECT * FROM ventas WHERE pedido = :ped AND creado_by = :cre ");
+    $query = $pdo->prepare("SELECT * FROM ventas_jc WHERE pedido = :ped AND creado_by = :cre ");
     $query->bindParam(':ped', $pedido, PDO::PARAM_STR_CHAR);
     $query->bindParam(':cre', $Creado_by, PDO::PARAM_INT);
     $query->execute();

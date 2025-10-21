@@ -38,7 +38,7 @@ class AdminUsuarios {
     $con = new DataBase();
     $pdo = $con->conexion();
 
-    $query = $pdo->prepare("SELECT * FROM usuarios WHERE id_asesor = :ID");
+    $query = $pdo->prepare("SELECT * FROM usuarios_jc WHERE id_asesor = :ID");
     $query->execute([':ID' => $id]);
     $resul = $query->fetch();
 
@@ -73,7 +73,7 @@ class AdminUsuarios {
         $conn = new DataBase();
         $pdo = $conn->conexion();
     
-        $query = $pdo->prepare("UPDATE usuarios SET usuario=:User, clave=:Clave, rol=:Rol  WHERE id_asesor=:ID ");
+        $query = $pdo->prepare("UPDATE usuarios_jc SET usuario=:User, clave=:Clave, rol=:Rol  WHERE id_asesor=:ID ");
         $query->bindParam(':User', $usuario);
         $query->bindParam(':Clave', $clave);
         $query->bindParam(':Rol', $rol);
@@ -101,7 +101,7 @@ class AdminUsuarios {
     $conn = new DataBase();
     $pdo = $conn->conexion();
 
-    $query = $pdo->prepare("DELETE FROM usuarios WHERE id_asesor=:ID");
+    $query = $pdo->prepare("DELETE FROM usuarios_jc WHERE id_asesor=:ID");
     $query->bindParam(':ID', $id);
     $query->execute();
 
