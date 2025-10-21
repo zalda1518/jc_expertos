@@ -1,9 +1,9 @@
 <?php
 class DataBase
 {
-  private $host = 'containers-us-west-45.railway.app'; // ⚠️ cambia por el tuyo exacto
+  private $host = 'centerbeam.proxy.rlwy.net'; // ⚠️ cambia por el tuyo exacto
   private $usuario = 'root';
-  private $clave = 'AE8p9RkWfV7vZwzYjNqN'; // ⚠️ tu contraseña
+  private $clave = 'aeSQNfzAEzQZaskIJNRJvkWzlOwrbmpJ'; // ⚠️ tu contraseña
   private $basedatos = 'railway';
   private $port = 52524; // ⚠️ este puerto debe coincidir
 
