@@ -4,30 +4,21 @@
   transition: all 0.9s;
 }
 
-
 body {
-
   background-color:#dadde1;
- 
 }
-
-
 
 .header {
   display: flex;
   background-color: rgb(186, 203, 196);
   box-sizing: border-box;
-
 }
 
 .header-child {
   display: flex;
   box-sizing: border-box;
   width: 50%;
-
 }
-
-
 
 #header-registros {
   padding-top: 5px;
@@ -63,12 +54,13 @@ body {
 
 /*   INICIO DE ESTILOS ARCHIVO LOGIN  */
 #main-login{
-  border: solid 2px;
   display: flex;
   width: 100%;
   min-height: 1080px;
-  background-color:#dadde1;
-  
+  background: rgba(95, 90, 90, 0.15); /* fondo semitransparente */
+  backdrop-filter: blur(10px); /* efecto de difuminado */
+  -webkit-backdrop-filter: blur(10px); /* compatibilidad con Safari */
+  border: 1px solid rgba(141, 137, 137, 0.2); /* borde sutil */
 }
 
 .form-login {
@@ -88,7 +80,7 @@ body {
   margin-top: 15%;
   padding: 6%;
   width: 82%;
-  background-color: rgb(198, 235, 222);
+  background-color: rgb(241, 248, 246);
   font-size: 20px;
   border: none;
   border-radius: 10px;
@@ -99,7 +91,7 @@ body {
   color: black;
   border: solid 1px rgb(22, 22, 226);
   outline: rgb(22, 22, 226);
-  background-color: rgb(136, 138, 253);
+  background-color: rgb(184, 185, 253);
   border-radius: 5px;
 }
 
@@ -107,7 +99,7 @@ body {
   margin-top: 4%;
   padding: 6%;
   width: 82%;
-  background-color: rgb(198, 235, 222);
+  background-color: rgb(235, 238, 237);
   font-size: 20px;
   border: none;
   border-radius: 10px;
@@ -118,12 +110,12 @@ body {
   color: black;
   border: solid 1px rgb(22, 22, 226);
   outline: rgb(22, 22, 226);
-  background-color: rgb(136, 138, 253);
+  background-color: rgb(184, 185, 253);
   border-radius: 5px;
 }
 
 .login-input::placeholder {
-  color: black;
+  color: rgb(100, 92, 92);
 }
 
 #ingresar {
@@ -146,6 +138,7 @@ body {
   margin-top: 8%;
   justify-content: center;
   font-size: 2vh;
+  color: black;
 }
 
 .login:focus {
@@ -340,10 +333,10 @@ body {
  }
 
 .input-registros {
-  background-color: rgb(198, 235, 222);
+  background-color: rgb(232, 235, 234);
   display: flex;
   width: 85%;
-  padding: 5%;
+  padding: 3%;
   margin: 2%;
   text-decoration: none;
   font-size: 18px;
@@ -355,12 +348,12 @@ body {
   color: black;
   border: solid 1px rgb(22, 22, 226);
   outline: rgb(22, 22, 226);
-  background-color: rgb(161, 209, 192);
+  background-color: rgb(195, 204, 201);
   border-radius: 5px;
 }
 
 .input-registros::placeholder {
-  color: black;
+  color: rgb(75, 70, 70);
   font-size: 2vh;
 }
 
@@ -503,7 +496,7 @@ body {
 
 table {
    margin-top: 8%;
-  background-color: rgb(203, 249, 177);
+  background-color: rgb(224, 231, 220);
   width: 100%;
   justify-content: left;
   border-collapse: collapse;
@@ -512,7 +505,7 @@ table {
 }
 
 thead {
-   background-color: aquamarine;
+   background-color: rgb(168, 175, 173);
    
 }
 
@@ -523,7 +516,8 @@ th {
 }
 
 td {
-  border: solid 0.5px rgb(81, 224, 81);
+  border: solid 1px rgb(132, 139, 143);
+  background-color: rgb(168, 175, 173);
   padding: 10px;
 }
 
@@ -733,9 +727,9 @@ td {
 /* VERSION ESCRITORIO ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */ 
 
 
-@media(min-width:1024px){
+@media(min-width:768px){
   body{
-    background: url(../public/back-ground.jpg);
+    background: url(../public/fondo.webp);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -790,16 +784,16 @@ td {
 
 #main-login{
   width: 30%;
-  border:solid 1px #b2b6b9;
   opacity: 0.9;
 }
 
 .form-login{
   box-shadow: none;
-  border:solid #b2b6b9;
+  border:solid 1px #5f7688;
   min-height: auto;
   padding: 2%;
   padding-left: 5%;
+  border-radius: 10px;
 }
 #ingresar{
   background-color: #abb1b6;
@@ -951,7 +945,7 @@ td {
 
 .input-registros{
   width: 80%;
-  padding: 2%;
+  padding: 3%;
  }
 #formulario{
   margin-top: 0;
