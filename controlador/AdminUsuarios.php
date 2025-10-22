@@ -1,4 +1,7 @@
-<?php session_start();
+<?php 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 require('../config/DataBase.php');
 require('../modelo/CrearUser.php');
 require('../modelo/ActualizarUsuarios.php');
