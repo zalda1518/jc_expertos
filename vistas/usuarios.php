@@ -1,4 +1,5 @@
-<?php session_start();
+<?php
+session_start();
 require_once('../includes/alertas.php');
 require('header.php');
 if ($_SESSION['rol'] !== 'administrador'){
