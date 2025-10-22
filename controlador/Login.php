@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php session_start();
 require('../modelo/LoginModelo.php');
 require_once('../controlador/Redirect.php');
 
