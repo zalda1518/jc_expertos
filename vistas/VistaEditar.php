@@ -1,7 +1,4 @@
-<?php 
-
-
-require('header.php'); ?>
+<?php require('header.php'); ?>
 
 <?php
 require('../controlador/MainController.php');

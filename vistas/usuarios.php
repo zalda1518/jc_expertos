@@ -1,6 +1,6 @@
-<?php session_start();?>
+<?php require('header.php');?>
+
 <?php require_once('../includes/alertas.php');
-require('header.php');
 if ($_SESSION['rol'] !== 'administrador'){
   echo "<script>alert('no tienes permisos para estar aqui');
               window.location.href='crear.php';

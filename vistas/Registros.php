@@ -1,8 +1,4 @@
-<?php session_start(); ?>
-
-<?php
-
-require('header.php');
+<?php require('header.php');
 require_once('../includes/alertas.php');
 
 

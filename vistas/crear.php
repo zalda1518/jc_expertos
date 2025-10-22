@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <?php require('header.php');
 require_once('../controlador/Redirect.php');
 ?>
