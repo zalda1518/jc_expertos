@@ -1,7 +1,7 @@
 <?php
 class Redirect {
     public function __construct(string $url) {
-        header('Location:'. $url);
+       return header('Location:'. $url);
         exit();
     }
 }
