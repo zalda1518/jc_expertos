@@ -4,3 +4,4 @@ class Redirect {
         return header('Location:'. $url);
     }
 }
+?>
