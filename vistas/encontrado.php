@@ -48,8 +48,7 @@ require_once('../includes/alertas.php'); ?>
       if (empty($dat)) {
         $var = $_POST['buscar-cedula'];
         echo "<script>alert('Cedula no encontrada')</script>";
-        require_once('../controlador/Redirect.php');
-        new Redirect('buscar.php');
+        echo "<script>windows.location.href='buscar.php'</script>";
         die;
       } ?>
 
