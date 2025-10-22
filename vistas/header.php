@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,8 +8,6 @@
     <title>mis seguimientos</title>
     <link rel="stylesheet" href="../includes/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
-    
   </head>
   <body>
 <!--  <div class="header">
