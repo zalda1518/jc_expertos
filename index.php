@@ -1,7 +1,5 @@
-<?php 
-session_start();
-require_once('includes/alertas.php');
-?>
+<?php session_start();?>
+<?php  require_once('includes/alertas.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

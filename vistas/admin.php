@@ -1,7 +1,5 @@
-<?php
-session_start();
-require('header.php');
-?>
+<?php session_start(); ?>
+<?php require('header.php');?>
  
 
 <div id="main-administrar">

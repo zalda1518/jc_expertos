@@ -1,6 +1,5 @@
-<?php 
-session_start();
-require('header.php');
+<?php session_start(); ?>
+<?php require('header.php');
 require('../controlador/MainController.php'); 
 require_once('../controlador/Redirect.php');
 require_once('../includes/alertas.php'); ?>

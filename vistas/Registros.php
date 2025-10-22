@@ -1,7 +1,6 @@
-<?php
-session_start();
+<?php session_start(); ?>
 
-use function PHPSTORM_META\type;
+<?php
 
 require('header.php');
 require_once('../includes/alertas.php');
