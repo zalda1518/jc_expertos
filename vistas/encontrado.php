@@ -34,10 +34,8 @@ require_once('../includes/alertas.php'); ?>
     <?php 
 
       if(empty($_POST['buscar-cedula'])){
-
-          $_SESSION['cedulaEmpty'] ='si';
+          echo "<script>alert('Escriba el numero de cedula')</script>";
           new Redirect('buscar.php');
-          
        }
         
         if(isset($_POST['buscar'])){
@@ -49,7 +47,7 @@ require_once('../includes/alertas.php'); ?>
 
         if(empty($dat)){
          $var = $_POST['buscar-cedula'];
-         $_SESSION['cedulaNotFound'] = $var;
+        echo "<script>alert('Cedula no encontrada')</script>";
          new Redirect('buscar.php');
           die;
        } ?>
