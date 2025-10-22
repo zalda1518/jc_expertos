@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
 require('../config/DataBase.php');
 require('../modelo/CrearClientes.php');
 require('../modelo/ActualizarClientes.php');
