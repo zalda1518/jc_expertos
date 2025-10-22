@@ -1,6 +1,10 @@
-<?php  require_once('includes/alertas.php');?>
+<?php if (session_status() === PHP_SESSION_NONE) {
+  session_start();
+} ?>
+<?php require_once('includes/alertas.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,41 +18,40 @@
 <body>
   <?php // para validar sesion iniciada y no volverse a logear //
   if (isset($_SESSION['start'])) {
-      require_once('controlador/Redirect.php');
-      new Redirect('/vistas/crear.php');
-    }
-    // para validar sesion iniciada y no volverse a logear ?>  
-  
-                  <!-- alertas -->  
-  <?php if(isset($_SESSION['nostart'])) { 
-          $alert = new Alertas();
-          $alert->usuarioIncorrecto();
-          session_unset();
-           }  
+    require_once('controlador/Redirect.php');
+    new Redirect('/vistas/crear.php');
+  }
+  // para validar sesion iniciada y no volverse a logear 
+  ?>
 
-      else if(isset($_SESSION['vacios'])) {
-            $alert = new Alertas();
-            $alert->camposVacios();
-            session_unset();
-          }  ?>
-                  <!-- alertas -->  
+  <!-- alertas -->
+  <?php if (isset($_SESSION['nostart'])) {
+    $alert = new Alertas();
+    $alert->usuarioIncorrecto();
+    session_unset();
+  } else if (isset($_SESSION['vacios'])) {
+    $alert = new Alertas();
+    $alert->camposVacios();
+    session_unset();
+  }  ?>
+  <!-- alertas -->
 
   <div id="main-login">
     <form action="controlador/Login.php" method="post" id="login" class="form-login">
-      <input type="hidden" name="ingresar" /> 
-     <div class="div-input-login">
+      <input type="hidden" name="ingresar" />
+      <div class="div-input-login">
         <input class="login-input" type="text" name="usuario" id="usuario" placeholder="usuario" />
         <input class="login-input" type="password" name="clave" id="clave" placeholder="clave" />
-    </div>
+      </div>
 
       <button class="ingresar" type="submit" id="ingresar">INGRESAR</button>
-      
+
       <a href="" class="leyenda">Recuperar Contraseña</a>
     </form>
   </div>
 
-  
- 
+
+
 </body>
 
 </html>
